@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="721.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.User_8_View_All_ProductController">
+   <children>
+      <Button layoutX="585.0" layoutY="659.0" mnemonicParsing="false" onAction="#Go_to_Dashboard_SceneSwitchingButtonOnAction" text="Go to Dashboard" />
+      <TableView fx:id="productsTableView" layoutX="76.0" layoutY="113.0" prefHeight="509.0" prefWidth="643.0">
+         <columns>
+            <TableColumn fx:id="productNameTableColumn" prefWidth="177.0" text="Product Name" />
+            <TableColumn fx:id="unitPriceTableColumn" prefWidth="103.0" text="Unit Price" />
+            <TableColumn fx:id="preDefinedVatTableColumn" prefWidth="161.0" text="Pre-defined Vat Rate" />
+            <TableColumn fx:id="numItemsInStockTableColumn" prefWidth="202.0" text="Numbers of items in Stock" />
+         </columns>
+      </TableView>
+      <Label layoutX="240.0" layoutY="26.0" prefHeight="42.0" prefWidth="328.0" text="ALL PRODUCT LIST">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

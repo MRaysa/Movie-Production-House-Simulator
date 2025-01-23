@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="586.0" prefWidth="704.0" style="-fx-background-color: skyBlue;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ActorsCharacterViewController">
+   <children>
+      <TableView fx:id="tableOfCharacters" layoutX="10.0" layoutY="29.0" prefHeight="468.0" prefWidth="684.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="225.60000324249268" text="Name" />
+          <TableColumn fx:id="idCol" prefWidth="208.00001525878906" text="Id " />
+            <TableColumn fx:id="charCol" prefWidth="250.4000244140625" text="Character" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="521.0" mnemonicParsing="false" onAction="#backtoDashBoardAction" prefHeight="32.0" prefWidth="159.0" text="Back to DashBoard" />
+   </children>
+</AnchorPane>

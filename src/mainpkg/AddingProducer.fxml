@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="725.0" style="-fx-background-color: cyan;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AddingProducerController">
+   <children>
+      <TextField fx:id="nameFiled" layoutX="169.0" layoutY="85.0" promptText="nameField" />
+      <Text layoutX="25.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name of Producer:" wrappingWidth="131.13671875" />
+      <TextField fx:id="idFiled" layoutX="170.0" layoutY="122.0" promptText="Only Integer" />
+      <Text layoutX="25.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Id:" wrappingWidth="131.1367143690586" />
+      <TextField fx:id="passField" layoutX="169.0" layoutY="168.0" prefHeight="25.0" prefWidth="203.0" />
+      <Text layoutX="28.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter A Password" wrappingWidth="102.13671875" />
+      <Button layoutX="44.0" layoutY="205.0" mnemonicParsing="false" onAction="#addProducerAction" prefHeight="43.0" prefWidth="332.0" text="Create Id For a Producer" />
+      <TextArea fx:id="resultBar" editable="false" layoutX="43.0" layoutY="257.0" prefHeight="72.0" prefWidth="828.0" style="-fx-background-color: cyan;" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <ComboBox fx:id="desigCombo" layoutX="355.0" layoutY="83.0" prefWidth="150.0" promptText="Designation" />
+      <DatePicker fx:id="doj" layoutX="355.0" layoutY="135.0" prefHeight="25.0" prefWidth="150.0" />
+      <Text layoutX="355.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Join Date" wrappingWidth="102.13671875" />
+      <Button layoutX="683.0" layoutY="337.0" mnemonicParsing="false" onAction="#createTheTeam" prefHeight="36.0" prefWidth="174.0" text="Create The Team" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="movieName" layoutX="263.0" layoutY="37.0" prefHeight="36.0" prefWidth="338.0" promptText="Enter The Movie name ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="movieType" layoutX="545.0" layoutY="85.0" promptText="Type Of the Movie" />
+      <Button layoutX="44.0" layoutY="337.0" mnemonicParsing="false" onAction="#backToPreviousAction" prefHeight="36.0" prefWidth="174.0" text="Back Previous" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="683.0" layoutY="413.0" mnemonicParsing="false" onAction="#goToLogInPage" prefHeight="36.0" prefWidth="174.0" text="Go to Log in Page" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.SceneDescriptionSceneController">
+   <children>
+      <Button layoutX="141.0" layoutY="318.0" mnemonicParsing="false" onAction="#addSceneDescriptionButtonOnClick" prefHeight="31.0" prefWidth="342.0" style="-fx-background-radius: 20; -fx-background-color: steelblue;" text="Add Scene Description" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="sceneDescriptionTextArea" layoutX="138.0" layoutY="151.0" prefHeight="148.0" prefWidth="342.0" promptText="write scene description...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <ComboBox fx:id="chooseSceneComboBox" layoutX="379.0" layoutY="111.0" prefHeight="25.0" prefWidth="101.0" />
+      <Label layoutX="138.0" layoutY="113.0" text="Choose Scene to add Description" textFill="#8f8f8f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="61.0" text="Add Scene Description Scene" textFill="#6e6e6e">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" onAction="#backToScriptwriterDashboardButtonOnClicked" text="Dashboard">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#toScriptwriterDashboardButtonOnClicked" text="Dashboard" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Other Actions">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToCharacterButtonOnClick" text="Create Character" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToStoryButtonOnClick" text="Craft Story" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToDialogueButtonOnClick" text="Write Dialogue" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToSceneDescriptionButtonOnClick" text="Add Scene Description" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToCharacterDepthButtonOnClick" text="Enhance Character Depth" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToMaintainFormatButtonOnClick" text="Maintain Format" />
+                  <MenuItem mnemonicParsing="false" text="Revise Script" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToWriteScriptButtonOnClick" text="Write Script" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Close">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

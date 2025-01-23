@@ -1,0 +1,10 @@
+Product: High-quality Cameras, Quantity: 6
+Product: Tripods, Quantity: 5
+Product: Audio Recorders, Quantity: 4
+Product: Microphones, Quantity: 3
+Product: Wardrobe Accessories, Quantity: 3
+Product: Furniture and Props, Quantity: 3
+Product: Costumes, Quantity: 15
+Product: Makeup and Hair Styling Products, Quantity: 4
+Product: Rental Fees for Shooting Locations, Quantity: 6
+Product: Boom Poles, Quantity: 5

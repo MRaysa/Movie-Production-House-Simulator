@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="659.0" prefWidth="705.0" style="-fx-background-color: lavender;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="mainpkg.ActorsContractSettingController">
+   <children>
+      <TableView fx:id="tableOfContract" layoutX="10.0" layoutY="181.0" prefHeight="396.0" prefWidth="686.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="130.39999675750732" text="Name" />
+          <TableColumn fx:id="idCol" prefWidth="180.8000030517578" text="ID" />
+            <TableColumn fx:id="startCol" prefWidth="180.8000030517578" text="From" />
+            <TableColumn fx:id="endCol" prefWidth="192.00003662109373" text="To" />
+        </columns>
+      </TableView>
+      <Button layoutX="10.0" layoutY="598.0" mnemonicParsing="false" onAction="#backToDashBoardAction" prefHeight="54.0" prefWidth="144.0" text="Back To DashBoard Action" textAlignment="CENTER" wrapText="true" />
+      <Text layoutX="15.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Id:" wrappingWidth="150.39999999999998" />
+      <TextField fx:id="IdField" editable="false" layoutX="16.0" layoutY="41.0" />
+      <Text layoutX="193.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Name:" wrappingWidth="150.39999999999998" />
+      <TextField fx:id="nameField" editable="false" layoutX="194.0" layoutY="41.0" />
+      <Text layoutX="373.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Desig:" wrappingWidth="150.39999999999998" />
+      <TextField fx:id="desigField" editable="false" layoutX="374.0" layoutY="41.0" />
+      <DatePicker fx:id="startingDate" layoutX="15.0" layoutY="128.0" />
+      <DatePicker fx:id="endIngDate" layoutX="233.0" layoutY="128.0" />
+      <Text layoutX="19.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting Date Of Contract" wrappingWidth="149.59999999999997" />
+      <Text layoutX="233.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ending Date Of Contract" wrappingWidth="149.59999999999997" />
+      <Button layoutX="448.0" layoutY="128.0" mnemonicParsing="false" onAction="#addAction" prefHeight="26.0" prefWidth="118.0" text="Add Action" />
+      <Button layoutX="577.0" layoutY="128.0" mnemonicParsing="false" onAction="#removeAction" prefHeight="26.0" prefWidth="118.0" text="Remove Action" />
+   </children>
+</AnchorPane>

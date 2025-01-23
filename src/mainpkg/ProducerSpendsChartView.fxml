@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="675.0" prefWidth="815.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="mainpkg.ProducerSpendsChartViewController">
+   <children>
+      <BarChart fx:id="barChart1" layoutX="21.0" layoutY="24.0" prefHeight="260.0" prefWidth="370.0">
+        <xAxis>
+          <CategoryAxis fx:id="barChrat1" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="barChart2" layoutX="408.0" layoutY="6.0" prefHeight="277.0" prefWidth="379.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis prefHeight="228.0" prefWidth="32.0" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <BarChart fx:id="barChart3" layoutX="24.0" layoutY="299.0" prefHeight="318.0" prefWidth="356.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <BarChart fx:id="barChart4" layoutX="412.0" layoutY="293.0" prefHeight="329.0" prefWidth="370.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis prefHeight="292.0" prefWidth="23.0" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

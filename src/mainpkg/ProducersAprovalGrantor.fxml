@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="699.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ProducersAprovalGrantorController">
+   <children>
+      <TableView fx:id="tableOfAprovals" layoutX="10.0" layoutY="185.0" prefHeight="386.0" prefWidth="728.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="137.5999813079834" text="Name " />
+          <TableColumn fx:id="desigCol" prefWidth="131.20001220703125" text="Designation" />
+            <TableColumn fx:id="applicationCol" prefWidth="151.199951171875" text="Type Of AppLication" />
+            <TableColumn fx:id="commentsCol" prefWidth="131.19998168945312" text="Comments" />
+            <TableColumn fx:id="statusCol" prefWidth="175.20001220703125" text="Aproval STatus" />
+        </columns>
+      </TableView>
+      <Button layoutX="374.0" layoutY="111.0" mnemonicParsing="false" onAction="#aprovalAction" prefHeight="56.0" prefWidth="357.0" text="Approved Selected" />
+      <Button layoutX="10.0" layoutY="587.0" mnemonicParsing="false" onAction="#backToDashBoardAction" prefHeight="62.0" prefWidth="213.0" text="Back To DashBoard" />
+      <Button layoutX="15.0" layoutY="111.0" mnemonicParsing="false" onAction="#notAprovalAction" prefHeight="56.0" prefWidth="338.0" text="Not aprove Selected" />
+   </children>
+</AnchorPane>

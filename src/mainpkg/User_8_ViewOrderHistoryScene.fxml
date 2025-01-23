@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="658.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.User_8_ViewOrderHistorySceneController">
+   <children>
+      <TextArea fx:id="readProductHistory" editable="false" layoutX="30.0" layoutY="108.0" prefHeight="353.0" prefWidth="603.0" />
+      <Button layoutX="30.0" layoutY="475.0" mnemonicParsing="false" onAction="#loadOrderHistoryButton" text="Load Order Histoy" />
+      <Button layoutX="485.0" layoutY="475.0" mnemonicParsing="false" onAction="#backToDashboardResourceSupplier" text="Back To Dashboard" />
+      <Label layoutX="217.0" layoutY="27.0" text="Order History">
+         <font>
+            <Font name="Bernard MT Condensed" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ActorRescheduleShootingDateController">
+   <children>
+      <TableView fx:id="tableForReschedule" layoutX="10.0" layoutY="187.0" prefHeight="443.0" prefWidth="720.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="114.40002298355103" text="Name" />
+            <TableColumn fx:id="olddateCol" prefWidth="137.60003662109375" text="Old Date" />
+            <TableColumn fx:id="newDateCol" prefWidth="171.20001220703125" text="New Date" />
+            <TableColumn fx:id="commentsCol" prefWidth="293.60003662109375" text="Comments" />
+        </columns>
+      </TableView>
+      <Text layoutX="22.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="97.33673095703125" />
+      <Text layoutX="22.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" wrappingWidth="97.33673095703125" />
+      <Text layoutX="20.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designation" wrappingWidth="97.33673095703125" />
+      <TextField fx:id="nameField" layoutX="105.0" layoutY="12.0" />
+      <TextField fx:id="idField" layoutX="105.0" layoutY="49.0" />
+      <TextField fx:id="desigField" layoutX="105.0" layoutY="86.0" />
+      <DatePicker fx:id="newDate" layoutX="416.0" layoutY="69.0" />
+      <Text layoutX="334.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Old Date" wrappingWidth="59.20003662109366" />
+      <Text layoutX="333.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Date" wrappingWidth="59.20003662109366" />
+      <Button layoutX="406.0" layoutY="115.0" mnemonicParsing="false" onAction="#addDateAction" prefHeight="58.0" prefWidth="98.0" text="Add The Date " textAlignment="CENTER" wrapText="true" />
+      <Text layoutX="22.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="97.33673095703125" />
+      <TextField fx:id="descripField" layoutX="126.0" layoutY="132.0" prefHeight="26.0" prefWidth="219.0" />
+      <Button layoutX="529.0" layoutY="116.0" mnemonicParsing="false" onAction="#removeDateAction" prefHeight="58.0" prefWidth="97.0" text="Remove The Date" textAlignment="CENTER" wrapText="true" />
+      <ComboBox fx:id="oldDateCombo" layoutX="417.0" layoutY="19.0" prefHeight="26.0" prefWidth="175.0" />
+      <Button layoutX="20.0" layoutY="642.0" mnemonicParsing="false" onAction="#backToDashBoardAction" prefHeight="50.0" prefWidth="162.0" text="Back To DashBoard Action" />
+   </children>
+</AnchorPane>

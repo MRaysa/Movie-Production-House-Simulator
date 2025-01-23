@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.User_7_View_Director_Purchase_RequestController">
+   <children>
+      <Label layoutX="183.0" layoutY="24.0" prefHeight="35.0" prefWidth="297.0" text="Requested Products">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="requestedProductTableView" layoutX="50.0" layoutY="79.0" prefHeight="438.0" prefWidth="564.0">
+        <columns>
+          <TableColumn fx:id="productNameTableColumn" prefWidth="309.0" text="Product Name" />
+          <TableColumn fx:id="quantityTableColumn" prefWidth="252.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <Button layoutX="480.0" layoutY="534.0" mnemonicParsing="false" onAction="#goTOProjectManagerDashboredSceeSwitchinOnAction" text="Go to Dashboard" />
+      <Button layoutX="50.0" layoutY="534.0" mnemonicParsing="false" onAction="#loadRequestedProductButtonOnClick" text="Load Current Requested" />
+   </children>
+</AnchorPane>

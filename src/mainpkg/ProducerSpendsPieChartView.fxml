@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="796.0" prefWidth="1023.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ProducerSpendsPieChartViewController">
+   <children>
+      <PieChart fx:id="pieChart1" layoutX="14.0" layoutY="14.0" prefHeight="380.0" prefWidth="490.0" style="-fx-background-color: cyan;" />
+      <PieChart fx:id="pieChart2" layoutX="516.0" layoutY="14.0" prefHeight="380.0" prefWidth="498.0" style="-fx-background-color: lightblue;" />
+      <PieChart fx:id="pieChart3" layoutX="161.0" layoutY="406.0" prefHeight="362.0" prefWidth="514.0" style="-fx-background-color: SkyBlue;" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="18.0" prefWidth="158.0" text="Pre Productuin Cost Review" />
+      <Label layoutX="516.0" layoutY="14.0" prefHeight="18.0" prefWidth="158.0" text="Post Productuin Cost Review" />
+      <Label layoutX="161.0" layoutY="408.0" prefHeight="18.0" prefWidth="158.0" text="SupplyCostReview" />
+   </children>
+</AnchorPane>

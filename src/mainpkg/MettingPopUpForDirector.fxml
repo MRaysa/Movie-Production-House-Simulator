@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="781.0" style="-fx-background-color: skyblue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="mainpkg.MettingPopUpForDirectorController">
+   <children>
+      <TableView fx:id="tableOfMetting" layoutX="15.0" layoutY="80.0" prefHeight="407.0" prefWidth="751.0">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="111.99999856948853" text="Name " />
+            <TableColumn fx:id="idCol" prefWidth="108.79999542236328" text="Id" />
+            <TableColumn fx:id="meetingDateCol" prefWidth="116.79998779296875" text="Meeting Date" />
+            <TableColumn fx:id="meetTimeCol" prefWidth="129.60003662109375" text="Meeting Time" />
+            <TableColumn fx:id="meetTypeCol" prefWidth="135.99990844726562" text="Meeting Type" />
+            <TableColumn fx:id="platFormCol" prefWidth="151.199951171875" text="Meeting Platform" />
+         </columns>
+      </TableView>
+      <Text layoutX="283.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Actor Meeting Times" wrappingWidth="193.33682250976562">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

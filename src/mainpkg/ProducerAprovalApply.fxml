@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="671.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ProducerAprovalApplyController">
+   <children>
+      <TableView fx:id="tableOfAprovals" layoutX="19.0" layoutY="204.0" prefHeight="386.0" prefWidth="728.0">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="137.5999813079834" text="Name " />
+            <TableColumn fx:id="desigCol" prefWidth="131.20001220703125" text="Designation" />
+            <TableColumn fx:id="applicationCol" prefWidth="151.199951171875" text="Type Of AppLication" />
+            <TableColumn fx:id="commentsCol" prefWidth="131.19998168945312" text="Comments" />
+            <TableColumn fx:id="statusCol" prefWidth="175.20001220703125" text="Aproval STatus" />
+         </columns>
+      </TableView>
+      <Button layoutX="586.0" layoutY="129.0" mnemonicParsing="false" onAction="#addaprovalAction" prefHeight="45.0" prefWidth="146.0" text="Add Approval" />
+      <Text layoutX="309.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="112.53668594360352" />
+      <TextField fx:id="nameField" editable="false" layoutX="428.0" layoutY="19.0" />
+      <Text layoutX="430.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select ApplicationType" wrappingWidth="146.39999999999986" />
+      <Text layoutX="20.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write A Comments:" wrappingWidth="112.53668594360352" />
+      <TextField fx:id="commentField" layoutX="139.0" layoutY="162.0" prefHeight="26.0" prefWidth="281.0" promptText="Exaplain in 2/3 words" />
+      <ComboBox fx:id="applicaTionTypeCombo" layoutX="429.0" layoutY="74.0" prefWidth="150.0" />
+      <Text layoutX="20.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designation" wrappingWidth="112.53668594360352" />
+      <TextField fx:id="desigField" editable="false" layoutX="139.0" layoutY="70.0" />
+      <Text layoutX="20.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Id" wrappingWidth="112.53668594360352" />
+      <TextField fx:id="idField" editable="false" layoutX="139.0" layoutY="19.0" />
+      <Button layoutX="431.0" layoutY="129.0" mnemonicParsing="false" onAction="#RemoveAprovalAction" prefHeight="45.0" prefWidth="146.0" text="Remove Approval" />
+   </children>
+</AnchorPane>

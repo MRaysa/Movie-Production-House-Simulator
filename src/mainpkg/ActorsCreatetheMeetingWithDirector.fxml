@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="668.0" prefWidth="759.0" style="-fx-background-color: skyblue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="mainpkg.ActorsCreatetheMeetingWithDirectorController">
+   <children>
+      <Text layoutX="209.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meeting Platform" wrappingWidth="157.60000000000002" />
+      <ComboBox fx:id="meetingTypeCombo" layoutX="24.0" layoutY="114.0" prefHeight="26.0" prefWidth="157.0" />
+      <Text layoutX="24.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meting Type" wrappingWidth="164.00003662109373" />
+      <TextField fx:id="platFormField" layoutX="209.0" layoutY="114.0" prefHeight="26.0" prefWidth="190.0" />
+      <DatePicker fx:id="mettingDate" layoutX="212.0" layoutY="51.0" prefHeight="26.0" prefWidth="189.0" />
+      <Text layoutX="215.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select The date of Meeting" wrappingWidth="164.00003662109373" />
+      <Button layoutX="609.0" layoutY="24.0" mnemonicParsing="false" onAction="#saveTheFileaction" prefHeight="52.0" prefWidth="130.0" text="Save " />
+      <Text layoutX="25.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select id  of the MemBer" wrappingWidth="157.5999999999999" />
+      <Button layoutX="24.0" layoutY="596.0" mnemonicParsing="false" onAction="#backTodashAction" prefHeight="52.0" prefWidth="198.0" text="Back To dashBoard" />
+      <TableView fx:id="tableOfMetting" layoutX="8.0" layoutY="164.0" prefHeight="407.0" prefWidth="743.0">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="111.99999856948853" text="Name " />
+            <TableColumn fx:id="idCol" prefWidth="108.79999542236328" text="Id" />
+            <TableColumn fx:id="meetingDateCol" prefWidth="116.79998779296875" text="Meeting Date" />
+            <TableColumn fx:id="meetTimeCol" prefWidth="129.60003662109375" text="Meeting Time" />
+            <TableColumn fx:id="meetTypeCol" prefWidth="135.99990844726562" text="Meeting Type" />
+            <TableColumn fx:id="platFormCol" prefWidth="138.4000122070313" text="Meeting Platform" />
+         </columns>
+      </TableView>
+      <Label fx:id="nameBar" layoutX="423.0" layoutY="51.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: lavender;" />
+      <Text layoutX="420.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="157.5999999999999" />
+      <TextField fx:id="timeField" layoutX="403.0" layoutY="114.0" prefHeight="26.0" prefWidth="190.0" />
+      <Text layoutX="407.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" wrappingWidth="157.60000000000002" />
+      <Button layoutX="609.0" layoutY="88.0" mnemonicParsing="false" onAction="#removeMeetingAction" prefHeight="52.0" prefWidth="130.0" text="Cancel The Meeting" />
+      <TextField fx:id="IdField" layoutX="24.0" layoutY="52.0" prefHeight="26.0" prefWidth="158.0" />
+   </children>
+</AnchorPane>

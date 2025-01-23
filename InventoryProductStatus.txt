@@ -1,0 +1,21 @@
+Prodct Name                       Quantity                  Current Status
+
+Popcorn Maker-----------------------100--------------------------Good
+Movie Projector---------------------70--------------------------Good
+Home Theater System----------------55---------------------------30 Good 15 Damage
+Movie Poster Frames-----------------10--------------------------3 damage & 7 good
+Cinema Style Recliner Chairs--------30--------------------------Good
+Movie-themed Blankets---------------200-------------------------30 Damage
+Film Reel Wall Decor----------------10--------------------------3 damage & 7 good
+Director's Chair -------------------10--------------------------3 damage & 7 good
+Vintage Movie Camera Replica--------10--------------------------3 damage & 7 good
+Movie Night Snack Bowls-------------10--------------------------3 damage & 7 good
+Cinematic Light Box-----------------10--------------------------3 damage & 7 good
+Movie Clapperboard------------------10--------------------------3 damage & 7 good
+Film Strip Wall Decals--------------10--------------------------3 damage & 7 good
+Movie-themed Board Games-------------10--------------------------3 damage & 7 good
+Movie Ticket Stub Diary-------------10--------------------------3 damage & 7 good
+Classic Movie DVD Collections-------500---------------------50 damage others good
+Movie-inspired T-shirts-------------10--------------------------3 damage & 7 good
+Film Score Soundtrack Vinyls-------500---------------------50 damage others good
+Cinema Paradiso Puzzle-------------500---------------------50 damage others good

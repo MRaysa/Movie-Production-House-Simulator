@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="902.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.Project_Manager_DashboardController">
+   <children>
+      <Label fx:id="user_name" layoutX="6.0" layoutY="4.0" prefHeight="21.0" prefWidth="222.0" style="-fx-background-color: blue;" text="User Name:" />
+      <Label layoutX="178.0" layoutY="38.0">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="39.0">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="39.0">
+         <font>
+            <Font name="Berlin Sans FB" size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="82.0" mnemonicParsing="false" onAction="#CreatAppoinmentScheduleDashboardSceneSwitchButtonOnAction" prefHeight="52.0" prefWidth="179.0" text="View Appointment Schedule" wrapText="true" />
+      <Button layoutX="14.0" layoutY="141.0" mnemonicParsing="false" onAction="#ViewDirectorPurchaseRequestSceneSwitchingButtonOnAction" prefHeight="52.0" prefWidth="179.0" text="View Director Purchase Request" wrapText="true" />
+      <Button layoutX="14.0" layoutY="306.0" mnemonicParsing="false" onAction="#ViewAllMovieLocationSceneSwitchingButtonOnAction" prefHeight="52.0" prefWidth="179.0" text="View All Movie Location" wrapText="true" />
+      <Button layoutX="14.0" layoutY="254.0" mnemonicParsing="false" onAction="#CollaborateOnBudgetSceneSwitchingButtonOnAction" prefHeight="44.0" prefWidth="179.0" text="Collaborate on Budget" wrapText="true" />
+      <Button layoutX="14.0" layoutY="370.0" mnemonicParsing="false" onAction="#InventoryManagementSceneSwitchingButtonOnAction" prefHeight="44.0" prefWidth="179.0" text="Inventory Management " wrapText="true" />
+      <Button layoutX="14.0" layoutY="423.0" mnemonicParsing="false" onAction="#placeOrder_SceneSwitchingButtonOnAction" prefHeight="44.0" prefWidth="179.0" text="Place Order" wrapText="true" />
+      <Button layoutX="14.0" layoutY="473.0" mnemonicParsing="false" onAction="#CollaborateSceneSwitchingButtonOnAction" prefHeight="44.0" prefWidth="179.0" text="Collaborate" wrapText="true" />
+      <Button layoutX="784.0" layoutY="495.0" mnemonicParsing="false" onAction="#Go_to_loginPage_OnActionButttonOnClick" prefHeight="31.0" prefWidth="104.0" text="Log out" wrapText="true" />
+      <Button layoutX="14.0" layoutY="203.0" mnemonicParsing="false" onAction="#Apply_For_LeaveButtonOnAction" prefHeight="44.0" prefWidth="179.0" text="Apply for Leave" />
+      <ImageView fitHeight="491.0" fitWidth="697.0" layoutX="205.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Project%20Manager%20Dashboard...png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

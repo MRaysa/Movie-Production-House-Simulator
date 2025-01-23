@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="575.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ActorReportSubmissionController">
+   <children>
+      <TableView fx:id="tableOfReports" layoutX="6.0" layoutY="210.0" prefHeight="314.0" prefWidth="552.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="94.4000244140625" text="Name " />
+          <TableColumn fx:id="idCol" prefWidth="88.79998779296875" text="Id" />
+            <TableColumn fx:id="reportedNameCol" prefWidth="130.4000244140625" text="Reported Invididual" />
+            <TableColumn fx:id="reportedDesigCol" prefWidth="109.5999755859375" text="Reported Desig" />
+            <TableColumn fx:id="reasonCol" prefWidth="127.19989013671875" text="Reason" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nameField" editable="false" layoutX="22.0" layoutY="47.0" />
+      <Text layoutX="22.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="149.5999999999999" />
+      <TextField fx:id="idField" editable="false" layoutX="22.0" layoutY="107.0" />
+      <Text layoutX="22.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" wrappingWidth="149.5999999999999" />
+      <ComboBox fx:id="reportedIndividualCol" layoutX="221.0" layoutY="47.0" onAction="#reportedIndividualIdAction" prefWidth="150.0" />
+      <ComboBox fx:id="reasons" layoutX="221.0" layoutY="125.0" prefWidth="150.0" />
+      <Button layoutX="22.0" layoutY="161.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="26.0" prefWidth="87.0" text="Submit" />
+      <Button layoutX="135.0" layoutY="161.0" mnemonicParsing="false" onAction="#removeAction" prefHeight="26.0" prefWidth="95.0" text="Remove" />
+      <Label fx:id="reportedName" layoutX="410.0" layoutY="46.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: skyblue;" />
+      <Button layoutX="6.0" layoutY="553.0" mnemonicParsing="false" onAction="#backDashBoardAction" prefHeight="43.0" prefWidth="150.0" text="Back To DashBoard" />
+      <Text layoutX="221.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select The id to report" wrappingWidth="149.5999999999999" />
+      <Text layoutX="221.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reasons Of Reporting" wrappingWidth="149.5999999999999" />
+      <Text layoutX="410.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name (Reported)" wrappingWidth="149.5999999999999" />
+      <Label fx:id="desigField" layoutX="409.0" layoutY="125.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: skyblue;" />
+      <Text layoutX="409.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desig(Reported)" wrappingWidth="149.5999999999999" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.User_6_ViewProjectScheduleController">
+   <children>
+      <TableView fx:id="ViewSchedule" layoutX="14.0" layoutY="62.0" prefHeight="294.0" prefWidth="569.0">
+        <columns>
+          <TableColumn fx:id="shootingTopicTableCollum" prefWidth="185.0" text="Shooting Topic" />
+          <TableColumn fx:id="locationCollum" prefWidth="190.0" text="Location" />
+            <TableColumn fx:id="timeCollum" prefWidth="193.0" text="TIme" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="723.0" style="-fx-background-color: cyan;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="mainpkg.ContractViewController">
+   <children>
+      <TableView fx:id="tableOfContract" layoutX="18.0" layoutY="31.0" prefHeight="396.0" prefWidth="686.0">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="130.39999675750732" text="Name" />
+            <TableColumn fx:id="idCol" prefWidth="180.8000030517578" text="ID" />
+            <TableColumn fx:id="startCol" prefWidth="180.8000030517578" text="From" />
+            <TableColumn fx:id="endCol" prefWidth="192.00003662109373" text="To" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

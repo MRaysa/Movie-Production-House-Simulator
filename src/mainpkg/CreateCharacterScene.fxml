@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CreateCharacterSceneController">
+   <children>
+      <Rectangle arcWidth="5.0" fill="CADETBLUE" height="410.0" layoutX="299.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="310.0" />
+      <TextField fx:id="characterNameTextField" layoutX="38.0" layoutY="150.0" prefHeight="30.0" prefWidth="157.0" promptText="Enter Character Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="characterTypeComboBox" layoutX="38.0" layoutY="219.0" prefHeight="30.0" prefWidth="157.0" />
+      <Label layoutX="38.0" layoutY="195.0" text="Select Character Type:" textFill="#777777">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="38.0" layoutY="283.0" mnemonicParsing="false" onAction="#createCharacterButtonOnClicked" prefHeight="20.0" prefWidth="234.0" style="-fx-background-color: cadetblue; -fx-background-radius: 20;" text="Create a Character" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="characterTableView" layoutX="333.0" layoutY="100.0" prefHeight="134.0" prefWidth="234.0">
+        <columns>
+          <TableColumn fx:id="characterNameTableColumn" prefWidth="115.0" text="Character Name" />
+          <TableColumn fx:id="characterTypeTableColumn" prefWidth="118.0" text="Character Type" />
+        </columns>
+      </TableView>
+      <Label layoutX="35.0" layoutY="79.0" text="Create Character Scene" textFill="#555555">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="38.0" layoutY="363.0" mnemonicParsing="false" onAction="#clearCharTableViewButtonOnClicked" prefHeight="20.0" prefWidth="234.0" style="-fx-background-color: coral; -fx-background-radius: 20;" text="Clear Table View" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="609.0">
+        <menus>
+            <Menu mnemonicParsing="false" onAction="#backToScriptwriterDashboardButtonOnClicked" text="Dashboard">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#toScriptwriterDashboardButtonOnClicked" text="Dashboard" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Other Actions">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToCharacterButtonOnClick" text="Create Character" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToStoryButtonOnClick" text="Craft Story" />
+              <MenuItem mnemonicParsing="false" onAction="#goToDialogueButtonOnClick" text="Write Dialogue" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToSceneDescriptionButtonOnClick" text="Add Scene Description" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToCharacterDepthButtonOnClick" text="Enhance Character Depth" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToMaintainFormatButtonOnClick" text="Maintain Format" />
+                  <MenuItem mnemonicParsing="false" text="Revise Script" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToWriteScriptButtonOnClick" text="Write Script" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Close">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="333.0" layoutY="67.0" text="Character instances" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="characterTableView1" layoutX="333.0" layoutY="272.0" prefHeight="134.0" prefWidth="234.0">
+         <columns>
+            <TableColumn fx:id="characterNameTableColumn1" prefWidth="115.0" text="Character Name" />
+            <TableColumn fx:id="characterTypeTableColumn1" prefWidth="118.0" text="Character Type" />
+         </columns>
+      </TableView>
+      <Button layoutX="38.0" layoutY="323.0" mnemonicParsing="false" onAction="#loadCharacterButtonOnClicked" prefHeight="32.0" prefWidth="234.0" style="-fx-background-radius: 20;" text="Load characters" textFill="#535353">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="333.0" layoutY="246.0" text="Currrently loaded Characters:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

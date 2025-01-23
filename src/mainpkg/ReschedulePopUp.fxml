@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="745.0" style="-fx-background-color: cyan;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="mainpkg.ReschedulePopUpController">
+   <children>
+      <TableView fx:id="tableForReschedule" layoutX="15.0" layoutY="50.0" prefHeight="443.0" prefWidth="720.0">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="114.40002298355103" text="Name" />
+            <TableColumn fx:id="olddateCol" prefWidth="137.60003662109375" text="Old Date" />
+            <TableColumn fx:id="newDateCol" prefWidth="155.20001220703125" text="New Date" />
+            <TableColumn fx:id="commentsCol" prefWidth="311.199951171875" text="Comments" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

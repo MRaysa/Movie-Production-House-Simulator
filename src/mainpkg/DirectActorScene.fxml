@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DirectActorSceneController">
+   <children>
+      <Rectangle fill="STEELBLUE" height="376.0" layoutX="308.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="292.0" />
+      <ComboBox fx:id="selectActorComboBox" layoutX="369.0" layoutY="128.0" prefHeight="25.0" prefWidth="170.0" />
+      <TableView fx:id="actorTableView" layoutX="48.0" layoutY="132.0" prefHeight="202.0" prefWidth="221.0">
+        <columns>
+          <TableColumn fx:id="actorTableColumn" prefWidth="129.33334350585938" text="Actors" />
+            <TableColumn fx:id="actorGenderTableView" prefWidth="90.0" text="gender" />
+        </columns>
+      </TableView>
+      <Button layoutX="369.0" layoutY="302.0" mnemonicParsing="false" onAction="#directActorButtonOnClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-radius: 20;" text="Direct Actor" textFill="#707070">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="369.0" layoutY="103.0" text="Select Actor to Direct :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="73.0" text="Direct Actors Scene:">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="-1.0" opacity="0.7" prefHeight="25.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Dashboard">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToDirectorDashboardButtonOnClicked" text="Dashboard" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Other Actions">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToInterpretScriptButtonOnClick" text="Interpret Script" />
+                  <MenuItem mnemonicParsing="false" onAction="#goTovisualizeFilmButtonOnClick" text="Visualize Film" />
+                  <MenuItem mnemonicParsing="false" onAction="#goTosetPaceAndTimingButtonOnClick" text="Set Pace and Timing" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToDirectActorButtonOnClick" text="Direct Actors" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToScheduleFilmButtonOnClick" text="Schedule Film" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToEquipmentSetupButtonOnClick" text="Equipment Setup" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToRequestProductButtonOnClick" text="Request Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToLocationButtonOnClick" text="Add Location" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Close">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ComboBox fx:id="assignCharacterComboBox" layoutX="368.0" layoutY="188.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="368.0" layoutY="163.0" text="Assign Character to Actor:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="112.0" text="Actor instances:" textFill="#656565">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="406.0" layoutY="241.0" mnemonicParsing="false" text="Lead a Rehearsal" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="406.0" layoutY="268.0" mnemonicParsing="false" text="one -one session" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="22.0" layoutY="33.0" mnemonicParsing="false" onAction="#Das" text="Dashboard" />
+      <Button layoutX="485.0" layoutY="46.0" mnemonicParsing="false" onAction="#loadCharactersButtonOnClick" text="Load Characters" />
+   </children>
+</AnchorPane>

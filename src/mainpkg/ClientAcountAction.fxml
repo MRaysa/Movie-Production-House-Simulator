@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="391.0" prefWidth="432.0" style="-fx-background-color: cyan;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="mainpkg.ClientAcountActionController">
+   <children>
+      <Text layoutX="40.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name" wrappingWidth="158.93670654296875" />
+      <TextField fx:id="nameField" layoutX="170.0" layoutY="61.0" />
+      <Text layoutX="40.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id " wrappingWidth="158.93670654296875" />
+      <TextField fx:id="idField" editable="false" layoutX="170.0" layoutY="106.0" />
+      <DatePicker fx:id="doj" editable="false" layoutX="170.0" layoutY="151.0" />
+      <Text layoutX="35.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Join" wrappingWidth="124.5367431640625" />
+      <Text layoutX="35.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designation" wrappingWidth="114.13671875" />
+      <TextField fx:id="desigField" editable="false" layoutX="170.0" layoutY="192.0" />
+      <Text layoutX="35.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create A Password" wrappingWidth="114.13671875" />
+      <TextField fx:id="passField" layoutX="170.0" layoutY="235.0" />
+      <Button layoutX="168.0" layoutY="279.0" mnemonicParsing="false" onAction="#createTheClientAccountAction" prefHeight="26.0" prefWidth="150.0" text="Create the Account" />
+      <Button layoutX="168.0" layoutY="315.0" mnemonicParsing="false" onAction="#gotoLoginAction" prefHeight="26.0" prefWidth="150.0" text="Go to Login Page" />
+   </children>
+</AnchorPane>

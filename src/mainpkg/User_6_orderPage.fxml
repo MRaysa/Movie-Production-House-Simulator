@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.User_6_OrderPageController">
+   <children>
+      <Button layoutX="341.0" layoutY="197.0" mnemonicParsing="false" onAction="#goEquipmentOrderPageOnClick" prefHeight="93.0" prefWidth="179.0" text="Equipment Order" />
+      <Button layoutX="74.0" layoutY="197.0" mnemonicParsing="false" onAction="#goCrewRequestPageOnClick" prefHeight="93.0" prefWidth="179.0" text="Request Additional Crew" />
+      <Button layoutX="469.0" layoutY="466.0" mnemonicParsing="false" onAction="#backToCinemetographerDashBordOnCLick" prefHeight="32.0" prefWidth="119.0" text="Back" />
+   </children>
+</AnchorPane>

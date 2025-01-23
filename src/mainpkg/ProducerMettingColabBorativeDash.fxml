@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="779.0" style="-fx-background-color: cyan;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ProducerMettingColabBorativeDashController">
+   <children>
+      <TableView fx:id="tableOfMetting" layoutX="14.0" layoutY="32.0" prefHeight="407.0" prefWidth="751.0">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="111.99999856948853" text="Name " />
+            <TableColumn fx:id="idCol" prefWidth="108.79999542236328" text="Id" />
+            <TableColumn fx:id="meetingDateCol" prefWidth="116.79998779296875" text="Meeting Date" />
+            <TableColumn fx:id="meetTimeCol" prefWidth="129.60003662109375" text="Meeting Time" />
+            <TableColumn fx:id="meetTypeCol" prefWidth="135.99990844726562" text="Meeting Type" />
+            <TableColumn fx:id="platFormCol" prefWidth="151.199951171875" text="Meeting Platform" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

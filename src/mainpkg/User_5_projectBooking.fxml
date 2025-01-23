@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.User_5_ProjectBookingController">
+   <children>
+      <Button layoutX="14.0" layoutY="409.0" mnemonicParsing="false" onAction="#backMainPageOnButtonClick" text="Back" />
+      <Text layoutX="212.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Project">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="selectGenreComboBox" layoutX="137.0" layoutY="71.0" prefWidth="150.0" />
+      <Text layoutX="74.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre?">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TableView fx:id="movieShocaseTableView" layoutX="14.0" layoutY="110.0" prefHeight="221.0" prefWidth="588.0">
+        <columns>
+          <TableColumn fx:id="movieNameTableCollum" prefWidth="226.0" text="Movie Name " />
+          <TableColumn fx:id="produccerNameCollum" prefWidth="183.0" text="Producer" />
+            <TableColumn fx:id="movieGenreTableCollum" prefWidth="178.0" text="Genre" />
+        </columns>
+      </TableView>
+      <Button layoutX="187.0" layoutY="350.0" mnemonicParsing="false" onAction="#addItemsInCartOnButtonClick" prefHeight="41.0" prefWidth="194.0" text="Add Cart" />
+      <Button layoutX="491.0" layoutY="402.0" mnemonicParsing="false" onAction="#viewCartItemOnButtonClick" text="View Cart Items" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="744.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.User_8_Resource_Supplier_DashboardController">
+   <children>
+      <Label fx:id="user_name" layoutY="-6.0" prefHeight="54.0" prefWidth="744.0" style="-fx-background-color: blue;" text="User Name:" wrapText="true" />
+      <Button layoutX="8.0" layoutY="47.0" mnemonicParsing="false" onAction="#add_New_Product_SceneSwitchingButtonOnAction" prefHeight="41.0" prefWidth="165.0" text="Add / Delet Product" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="8.0" layoutY="143.0" mnemonicParsing="false" onAction="#confirm_order_SceneSwitchingButtonOnAction" prefHeight="41.0" prefWidth="165.0" text="Confirm order" />
+      <Button layoutX="8.0" layoutY="188.0" mnemonicParsing="false" onAction="#view_order_details_SceneSwitchingButtonOnAction" prefHeight="41.0" prefWidth="165.0" text="View order details" />
+      <Button layoutX="8.0" layoutY="235.0" mnemonicParsing="false" onAction="#view_order_history_SceneSwitchingButtonOnAction" prefHeight="54.0" prefWidth="165.0" text="View order history" />
+      <Button layoutX="8.0" layoutY="292.0" mnemonicParsing="false" onAction="#product_Performance_analysis_SceneSwitchingButtonOnAction" prefHeight="41.0" prefWidth="165.0" text="Products Chart" wrapText="true" />
+      <Button layoutX="8.0" layoutY="342.0" mnemonicParsing="false" onAction="#creat_AppoinmentToProjectManager_SceneSwitchingButtonOnAction" prefHeight="54.0" prefWidth="165.0" text="Creat Appoinment to Project Manager" wrapText="true" />
+      <Button layoutX="641.0" layoutY="393.0" mnemonicParsing="false" onAction="#logout_SceneSwitchingButtonOnAction" prefHeight="31.0" prefWidth="80.0" text="Log out" />
+      <Button layoutX="8.0" layoutY="94.0" mnemonicParsing="false" onAction="#view_All_Product_SceneSwitchingButtonOnAction" prefHeight="41.0" prefWidth="165.0" text="View All Product" />
+      <ImageView fitHeight="354.0" fitWidth="564.0" layoutX="180.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/ResourceSupplierDashboardImage.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="8.0" layoutY="404.0" mnemonicParsing="false" onAction="#CollaborateSceneSwitchingButtonOnAction" prefHeight="41.0" prefWidth="165.0" text="Collaborate" />
+   </children>
+</AnchorPane>

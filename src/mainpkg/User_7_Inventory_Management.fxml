@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.User_7_Inventory_ManagementController">
+   <children>
+      <Button layoutX="604.0" layoutY="531.0" mnemonicParsing="false" onAction="#go_toProjectManagerDashboard" text="Go to Dashboard" />
+      <Label layoutX="286.0" layoutY="27.0" prefHeight="45.0" prefWidth="276.0" text="Product Status">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="39.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="readProductStutus" editable="false" layoutX="64.0" layoutY="90.0" prefHeight="409.0" prefWidth="674.0" />
+      <Button layoutX="71.0" layoutY="531.0" mnemonicParsing="false" onAction="#LoadProductStatusButton" text="Load Product Status" />
+   </children>
+</AnchorPane>

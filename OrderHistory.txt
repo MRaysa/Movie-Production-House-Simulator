@@ -1,0 +1,16 @@
+| Order Date | Product Name                  | Quantity | Unit Price | Total Cost   |
+|------------|-------------------------------|----------|------------|--------------|
+| 2023-03-01 | Camera Equipment Package      | 3        | $5,000     | $15,000      |
+| 2023-03-05 | Lighting Kit                  | 2        | $2,500     | $5,000       |
+| 2023-03-10 | Audio Recording Devices       | 5        | $1,200     | $6,000       |
+| 2023-03-15 | Green Screen and Backdrops    | 1        | $800       | $800         |
+| 2023-03-20 | Editing Software Licenses     | 10       | $500       | $5,000       |
+| 2023-03-25 | Drone for Aerial Shots        | 1        | $3,000     | $3,000       |
+| 2023-03-30 | Special Effects Makeup Kit    | 2        | $700       | $1,400       |
+| 2023-04-03 | Production Crew Services      | 1        | $20,000    | $20,000      |
+| 2023-04-08 | Wardrobe and Costume Rentals  | 3        | $1,000     | $3,000       |
+| 2023-04-12 | Stunt Equipment               | 1        | $4,500     | $4,500       |
+| 2023-04-17 | Catering Services             | 1        | $8,000     | $8,000       |
+| 2023-04-22 | Transport and Logistics       | 1        | $6,000     | $6,000       |
+| 2023-04-27 | Set Design and Construction   | 1        | $15,000    | $15,000      |
+| 2023-05-01 | Miscellaneous Production Supplies | 1   | $2,000     | $2,000       |

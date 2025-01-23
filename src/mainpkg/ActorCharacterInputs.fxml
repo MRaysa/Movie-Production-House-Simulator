@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="663.0" prefWidth="701.0" style="-fx-background-color: skyBlue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="mainpkg.ActorCharacterInputsController">
+   <children>
+      <TableView fx:id="tableOfCharacters" layoutX="24.0" layoutY="156.0" prefHeight="476.0" prefWidth="651.0">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="225.60000324249268" text="Name" />
+            <TableColumn fx:id="idCol" prefWidth="208.00001525878906" text="Id " />
+            <TableColumn fx:id="charCol" prefWidth="250.4000244140625" text="Character" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="idField" layoutX="24.0" layoutY="52.0" onAction="#idFieldAction" prefWidth="150.0" />
+      <Text layoutX="24.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the Id" wrappingWidth="150.39999999999998" />
+      <Label fx:id="nameField" layoutX="208.0" layoutY="52.0" prefHeight="26.0" prefWidth="175.0" style="-fx-background-color: lavender;" />
+      <Text layoutX="208.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="150.39999999999998" />
+      <Button layoutX="174.0" layoutY="96.0" mnemonicParsing="false" onAction="#removeSelectedCharAction" prefHeight="50.0" prefWidth="114.0" text="Remove Selected" />
+      <TextField fx:id="charField" layoutX="416.0" layoutY="52.0" prefHeight="26.0" prefWidth="182.0" />
+      <Text layoutX="416.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter The Character" wrappingWidth="137.33676147460938" />
+      <Button layoutX="24.0" layoutY="96.0" mnemonicParsing="false" onAction="#addCharAction" prefHeight="50.0" prefWidth="131.0" text="Add Character" />
+   </children>
+</AnchorPane>
